@@ -1,0 +1,23 @@
+<div class="modal-body" id="diagcontent">
+	 <form class="form-horizontal"  onsubmit="return false;">
+				  <div class="form-group">
+					<label for="inputFind" class="col-sm-3 control-label">ชื่อ-นามสกุล</label>
+					<div class="col-sm-9">
+							<div class="input-group">
+							  <input type="text" class="form-control" id="inputFind" placeholder="เลือกข้อมูลลูกค้า">
+							  <span class="input-group-btn">
+								<button class="btn btn-default"  id="btnSearchCust" type="button">ค้นหา</button>
+							  </span>
+							</div><!-- /input-group -->
+					</div>
+				  </div>
+		</form>
+		  <div class="form-group">
+					  <div class="list-group scrollitem height300" id="customerlist" >
+						  <a href="#" class="list-group-item list-group-item-danger">กรุณาเลือกค้นหา</a>
+					</div>
+				  </div>
+</div>
+<div class="modal-footer">
+	<button type="button"  class="btn btn-danger" onclick="cancelSearch()" data-dismiss="modal">ยกเลิก</button>
+</div>

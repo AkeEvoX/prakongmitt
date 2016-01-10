@@ -1,0 +1,37 @@
+<div class="modal-body" id="diagcontent">
+	 <form class="form-horizontal"  onsubmit="return false;">
+				  <div class="form-group">
+					<input type='hidden' id='inputindex' value='' />
+					<input type='hidden' id='saveitem' value='' />
+					<label for="cate" class="col-sm-3 control-label">ประเภทสินค้า</label>
+					<div class="col-sm-9">
+							  <select id='cateselect' class="form-control" >
+							  </select>
+					</div>
+					</div>
+					<div class="form-group">
+					<label for="groupselect" class="col-sm-3 control-label">กลุ่มสินค้า</label>
+					<div class="col-sm-9">
+							  <select id='groupselect' class="form-control" >
+							  </select>
+					</div>
+					</div>
+				  <div class="form-group">
+							<label for="productselect" class="col-sm-3  control-label">สินค้า</label>
+							<div class="col-sm-9">
+								<select id='productselect' class="form-control" >
+								</select>
+							</div>
+				  </div>
+				  <div class='form-group'>
+						<label for='pricebox' class='col-sm-3 control-label'>ราคา</label>
+						<div class='col-sm-3'>
+							<input type='text' class='form-control' id='pricebox' />
+						</div>
+				  </div>
+		</form>
+</div>
+<div class="modal-footer">
+	<button type='button' class='btn btn-success' onclick="callsave();" >บันทึก </button>
+	<button type="button"  class="btn btn-danger" data-dismiss="modal">ยกเลิก</button>
+</div>
