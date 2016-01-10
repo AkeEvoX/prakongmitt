@@ -1,0 +1,121 @@
+html,body {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  background-color:#b2bbbf;
+  height:100%;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.scrollmenu
+{
+	/*overflow:scroll;*/
+}
+
+.icon30{
+	font-size:30px;
+	vertical-align:middle;
+
+}
+
+.iconCate
+{
+	padding:5px;
+	width:90%;
+	margin:5px;
+	
+}
+
+.iconGroup
+{
+	border:0px solid;
+	display:inline-block;
+	text-align:center;
+	vartical-align:middle;
+}
+.iconGroup img{
+	display:inline-block;
+}
+
+a .iconGroup { padding:5px;margin:0;}
+
+.iconProd {
+	height:130px;
+	display:inline-block;
+	text-align:center;
+	vartical-align:middle;
+}
+
+.iconProd img{ 
+	display:inline-block; 
+}
+
+a .iconProd { padding:5px;margin:0;}
+
+a:hover .iconProd img {
+	border:2px solid #A9BCF5;
+}
+
+.iconMenu
+{
+	display:inline-block;
+	text-align:center;
+	vertical-align:middle;
+	margin-bottom:15px;
+}
+
+.iconMenu img {  display:inline-block; }
+
+
+.iconTitle {
+	display:inline-block;
+	vertical-align:middle;	
+	width:100%;
+}
+
+.iconTitle img{
+	display:inline-block;
+	margin-right:5px;
+}
+
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.scrollitem
+{
+	overflow:auto;
+	overflow-x: hidden;
+}
+
+.height200
+{
+	height:200px;
+}
+
+.height300{
+	height:300px;
+}
+
+.height400
+{
+	height:400px;
+}
+
+.height500
+{
+	height:500px;
+}
+
+.panel-green {
+	background:#E3F6CE;
+	color:white;
+}
+
+.row-buffer{
+	margin-bottom:10px;
+}
