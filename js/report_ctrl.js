@@ -161,8 +161,6 @@ $('#btnSearch').click(function(){
 	var groups = $('#groups');
 	var products = $('#products');
 	
-	//console.log(type.val() + " | " + start.val()  + " - " + end.val() + "|" + categorys.val() + "|" + groups.val() +"|" + products.val());
-	
 	switch(type.val())
 	{
 		case 'summary' :
@@ -191,7 +189,11 @@ function callSummeryReport()
 function callDetailReport(start,end,category,group,product)
 {
 	//pop report 
-	
+	popup("Report Detail","dialogs/report.detail.html",function(response,status,XMLHttpRequest){
+		var page = 1;
+		$('#currentPage').val(page);
+		loaddetail(page);
+	})
 }
 
 function  previouspage()
@@ -214,16 +216,6 @@ function nextpage()
 	if(page<=max){
 		controlpage(page);
 	}
-
-	/*
-	 var page = parseInt($('#currentPage').val()) + 1;
-	 var max = $('#showPage').text().split('/')[1];
-	 
-	if(page<=max){
-		$('#currentPage').val(page);
-		loadPage(page);
-	}
-	*/
 
 }
 
@@ -293,8 +285,31 @@ function loadsummary(pageNo)
 
 		},
 		error:function(xhr,status,error){
-			console.log(xhr.responseText);
+			console.log("call loadsummary error => " + xhr.responseText);
 		}
 	});
 	
+}
+
+function loaddetail(pageNo){
+	var list = $('#mgrList');
+	list.html("");
+	var start = $('#startInp');
+	var end = $('#endInp');
+	var categorys = $('#categorys');
+	var groups = $('#groups');
+	var products = $('#products');
+	
+	$.ajax({
+		url:'',
+		dataType:'json',
+		data:'',
+		contentType:'',
+		success:function(data){
+			
+		},
+		error:function(xhr,status,error){
+			console.log("call loaddetail error =>" + xhr.responseText);
+		}
+	});
 }
