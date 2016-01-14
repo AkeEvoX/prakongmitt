@@ -2,10 +2,10 @@
 function selectProductGroup(cateid,catename)
 {
 		try{
-			
+			$('#listProduct').empty();
 			$('#naviitem').empty();
 			$('#naviitem').html('<li><a href="#"  onclick=selectProductGroup('+cateid+',"'+catename+'")    >'+catename+'</a></li>');
-		//url:'controller/productgroup_ctrl.php?rdm='+new Date().getTime(),
+			//url:'controller/productgroup_ctrl.php?rdm='+new Date().getTime(),
 			$.ajax(
 			{
 				url:'controller/pricelist_ctrl.php?rdm='+new Date().getTime(),
@@ -109,12 +109,12 @@ function selectProduct(pro)
 
 		total= parseInt(total) + parseInt(price);
 		$('#totalinp').val(total);
-		
+		$('#netinp').val(total);
 		
 		//auto scroll bottom
 		var orderscroll = $('#orderlist');
 		orderscroll.scrollTop(orderscroll.prop('scrollHeight'));
-
+		
 	}
 	catch(e)
 	{

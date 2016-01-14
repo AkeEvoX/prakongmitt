@@ -33,8 +33,14 @@ $('#btnSave').click(function(){
 	var dataSave = {};
 	var orderinfo = {};
 	
+	var discount =  $('#discountinp').val(); 
+	
+	if(discount=="")
+		discount=0;
+	
 	dataSave["orderinfo"] = null;
-	orderinfo["custid"] = $('#inputCust').data("custid");
+	//orderinfo["custid"] = $('#inputCust').data("custid");
+	orderinfo["discount"] = discount;
 	orderinfo["total"] = $('#totalinp').val();
 	orderinfo["receive"] = $('#receiveinp').val();
 	orderinfo["return"] = $('#returninp').val();
@@ -112,16 +118,24 @@ $('#btnCancel').click(function(e){
 	}
 });
 
+$('#discountinp').keypress(function(e){
+	
+	if(e.which==13)
+	{
+		netcalculate();
+	}
+	
+});
 function validateorder()
 {
 	var result = true;
 	var errMsg = "";
 	
 	//validate custid
-	if($('#inputCust').data("custid")=="")
+	/*if($('#inputCust').data("custid")=="")
 	{
 		errMsg += "- กรุณาเลือกข้อมูลลูกค่า\n";
-	}
+	}*/
 	//valide total
 	if($('#totalinp').val()=="")
 	{
@@ -148,20 +162,31 @@ function validateorder()
 	return result;
 }
 
-function FncCalculate()
+function netcalculate()
 {
 	var total = parseInt($('#totalinp').val());
+	var discount = parseInt($('#discountinp').val());
+	var net = $('#netinp');
+	net.val(total - discount);
+}
+
+function FncCalculate()
+{
+	//var total = parseInt($('#totalinp').val());
+	//var discount = parseInt($('#discountinp').val());
+	var net  = parseInt($('#netinp').val());
 	var receive = parseInt($('#receiveinp').val());
 	var returnMoney = parseInt($('#returninp').val());
 	
-	if(receive < total)
+	if(receive < net)
 	{
 		alert('- ช่องรับเงินต้องมากกว่า ช่องรวมเงิน.');
 		return false;
 	}
 	
+	//net
 	
-	returnMoney = receive - total;
+	returnMoney = receive - net;
 	$('#returninp').val(returnMoney);
 	
 	return true;
@@ -172,17 +197,21 @@ function cleardata()
 		//clear navigate
 		$('#naviitem').html("<li><a href='#'>กรุณาเลือกเมนู</a></li>");
 		//clear customer
-		$('#inputCust').val('');
-		$('#inputCust').data("custid","");
+		//$('#inputCust').val('');
+		//$('#inputCust').data("custid","");
 		//clear product
 		$('#listProduct').empty();
+		
+		
 		//clear order
 		$('#orderitem').html('<li class="list-group-item list-group-item-warning">กรุณาเลือกสินค้า</li>');
 		//$('#orderitem').empty();
 		//clear calcuate
-		$('#totalinp').val('');
+		$('#totalinp').val(0);
+		$('#discountinp').val(0);
+		$('#netinp').val(0);
 		$('#receiveinp').val('');
-		$('#returninp').val('');
+		$('#returninp').val(0);
 }
 
 function resizepage()
