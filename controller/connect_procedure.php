@@ -1,8 +1,8 @@
 ﻿<?
 //การประกาศตัวแปร
-$mysqli_host="192.168.1.5";
-$mysqli_user="remotedb"; //super admin  user :root / pass:root
-$mysqli_pass="remotedb";//P@ssw0rd
+$mysqli_host="127.0.0.1";
+$mysqli_user="root"; //super admin  user :root / pass:root
+$mysqli_pass="P@ssw0rd";//P@ssw0rd
 $mysqli_db="prakongmittdb";
 	//ติดต่อเข้าฐานข้อมูล
 

@@ -85,23 +85,23 @@ if(!isset($_SESSION["profile"]))
 					  <div class="panel panel-danger">
 						<div class="panel-heading"><span class="iconTitle" > <img src="images/icons/Bid-02-32.png" class="img-responsive" />ข้อมูลชำระเงิน</span></div>
 						<div class="panel-body">
-						  <form class="form-horizontal">
-						  <div class="form-group">
-							<label for="inputCust" class="col-sm-3 control-label">สมาชิก</label>
-							<div class="col-sm-9">
-									<div class="input-group">
-									  <input type="text" class="form-control" id="inputCust" data-custid="" placeholder="เลือกค้นหาลูกค้า" readonly='readonly'>
-									  <span class="input-group-btn">
-										<button class="btn btn-default"  id="btnDiagSearchCust" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> ค้นหา</button>
-									  </span>
-									</div><!-- /input-group -->
-							</div>
-						  </div>
-						  
+						  <form class="form-horizontal">  
 						  <div class="form-group">
 							<label for="totalinp" class="col-sm-3 control-label">รวมเงิน</label>
 							<div class="col-sm-9">
 							  <input type="text" class="form-control" id="totalinp" placeholder="" readonly='readonly'>
+							</div>
+						  </div>
+						    <div class="form-group">
+							<label for="discountinp" class="col-sm-3 control-label">ส่วนลด</label>
+							<div class="col-sm-9">
+							  <input type="text" class="form-control" id="discountinp" placeholder="จำนวนเงินส่วนลด" value="0" >
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="netinp" class="col-sm-3 control-label">เงินสุทธิ</label>
+							<div class="col-sm-9">
+							  <input type="text" class="form-control" id="netinp" placeholder="จำนวนเงินส่วนลด" readonly='readonly' >
 							</div>
 						  </div>
 						  <div class="form-group">
@@ -159,5 +159,6 @@ if(!isset($_SESSION["profile"]))
 	<script src='js/product_ctrl.js' ></script>
 	<script src="js/searchcustomer.js" ></script>
 	<script src="js/menus.js" ></script>
+	
 </body>
 </html>

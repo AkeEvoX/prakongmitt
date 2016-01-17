@@ -1,8 +1,8 @@
 ﻿<?
 //การประกาศตัวแปร
-$m_Host="192.168.1.5";
-$m_User="remotedb"; //super admin  user :root / pass:root
-$m_Pass="remotedb"; //P@ssw0rd
+$m_Host="127.0.0.1";
+$m_User="root"; //super admin  user :root / pass:root
+$m_Pass="P@ssw0rd"; //P@ssw0rd
 $m_DB="prakongmittdb";
 	//ติดต่อเข้าฐานข้อมูล
 

@@ -1,8 +1,8 @@
 $(document).ready(function(){
 		
 		//load default page 
-		
-		loadcategoryPage(0);
+		loadcategoryPage($('#currentpage').val());
+
 });
 
 

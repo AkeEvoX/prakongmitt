@@ -41,7 +41,7 @@ else if($type=="summary") {
 
 
 	$sql = " select count(1) as total from orderinfo  ";
-	$sql .= " where orderDate between '$start' and '$end' ";
+	$sql .= " where orderDate between '$start 00:00:00' and '$end 23:59:59' ";
 
 	$data = mysql_query($sql);
 	$row = mysql_fetch_array($data);
@@ -51,7 +51,7 @@ else if($type=="summary") {
 
 	$sql = " select * ";
 	$sql .= " from orderinfo ";
-	$sql .= " where orderDate between '$start' and '$end' ";
+	$sql .= " where orderDate between '$start 00:00:00' and '$end 23:59:59' ";
 	$sql .= " limit $max,$pagesize ";
 
 	$data = mysql_query($sql);

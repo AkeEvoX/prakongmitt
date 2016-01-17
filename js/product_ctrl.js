@@ -2,10 +2,10 @@
 function selectProductGroup(cateid,catename)
 {
 		try{
-			
+			$('#listProduct').empty();
 			$('#naviitem').empty();
 			$('#naviitem').html('<li><a href="#"  onclick=selectProductGroup('+cateid+',"'+catename+'")    >'+catename+'</a></li>');
-		//url:'controller/productgroup_ctrl.php?rdm='+new Date().getTime(),
+			//url:'controller/productgroup_ctrl.php?rdm='+new Date().getTime(),
 			$.ajax(
 			{
 				url:'controller/pricelist_ctrl.php?rdm='+new Date().getTime(),
@@ -16,19 +16,22 @@ function selectProductGroup(cateid,catename)
 					
 					var generateObject = "";
 					var icon = "";
-					jQuery.each(JSON.parse(result.items),function(i,val){
-						
-						icon = "<a href='#' onclick=showProductList(this) cateid='"+cateid+"' groupid="+val.id+" groupname='"+val.name+"' >";
-						icon += "<div class='col-md-3 iconProd' >";
-						icon += "<img src='"+val.icon+"' class='img-responsive'  style='width:100px;'  /><br />";
-						icon += val.name;
-						icon += "</div></a>";
-						
-						generateObject += icon;
-					});
-					
+					if(result.items!="null")
+					{
+						jQuery.each(JSON.parse(result.items),function(i,val){
+							
+							icon = "<a href='#' onclick=showProductList(this) cateid='"+cateid+"' groupid="+val.id+" groupname='"+val.name+"' >";
+							icon += "<div class='col-md-3 iconProd' >";
+							icon += "<img src='"+val.icon+"' class='img-responsive'  style='width:100px;'  /><br />";
+							icon += val.name;
+							icon += "</div></a>";
+							
+							generateObject += icon;
+						});
+					}
 					
 					$('#listProduct').html(generateObject);
+
 				},
 				error:function(e)
 				{
@@ -109,12 +112,12 @@ function selectProduct(pro)
 
 		total= parseInt(total) + parseInt(price);
 		$('#totalinp').val(total);
-		
+		$('#netinp').val(total);
 		
 		//auto scroll bottom
 		var orderscroll = $('#orderlist');
 		orderscroll.scrollTop(orderscroll.prop('scrollHeight'));
-
+		
 	}
 	catch(e)
 	{
