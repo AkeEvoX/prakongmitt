@@ -20,10 +20,21 @@ html,body {
 
 }
 
+#tabCate .panel-body{
+
+	padding:0px;
+
+}
+
 .iconTable {
+
 	height:50px;
-	width:130px;
-	margin:5px;
+	width:110px;
+	
+	margin-top:5px;
+	margin-left:5px;
+	margin-right:0px;
+	
 	float:left;
 	/*height:50px;*/
 }

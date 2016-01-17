@@ -43,21 +43,12 @@ $('#btnSave').click(function(){
 	if(discount=="")
 		discount=0;
 	
-	var discount =  $('#discountinp').val(); 
-	
-	if(discount=="")
-		discount=0;
-	
 	dataSave["orderinfo"] = null;
 	orderinfo["custid"] = custid;
-=======
+
 	//orderinfo["custid"] = $('#inputCust').data("custid");
 	orderinfo["discount"] = discount;
->>>>>>> origin/master
-=======
-	//orderinfo["custid"] = $('#inputCust').data("custid");
-	orderinfo["discount"] = discount;
->>>>>>> origin/master
+	
 	orderinfo["total"] = $('#totalinp').val();
 	orderinfo["receive"] = $('#receiveinp').val();
 	orderinfo["return"] = $('#returninp').val();
@@ -180,7 +171,7 @@ function netcalculate()
 	var total = parseInt($('#totalinp').val());
 	var discount = parseInt($('#discountinp').val());
 	var net = $('#netinp');
-ß	net.val(total - discount);
+	net.val(total - discount);
 }
 
 function FncCalculate()

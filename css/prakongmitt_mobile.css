@@ -2,10 +2,12 @@
 @media (max-width:1024px)
 {
 	
-	.iconTable
-	{
-		display: 
+	.iconTable{
+		
 		width:100%;
+		margin-top:5px;
+		margin-left:5px;
+
 	}
 	/*
 	#tabCate s {
@@ -15,18 +17,15 @@
 	}*/
 }
 
+
+
 /*mobile*/
 @media (max-width:768px)
 {
 
-	div.panel-body {
-		/*width:80%;*/
-		/*height:250px;*/
-		
-	}
-	
 	.iconTable{
 		/*width:200px;*/
+		width:80px;
 	}
 	
 	.iconCate{

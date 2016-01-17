@@ -57,7 +57,6 @@ if(!isset($_SESSION["profile"]))
                 <div class="panel-heading" ><span class="iconTitle" > <img src="images/icons/Folder-32.png" class="img-responsive" />รายการโต๊ะ</span></div>
                 <div class="panel-body scrollitem" >
 					<div id="listTablenumber" >
-					
 					</div>
                 </div>
               </div>
