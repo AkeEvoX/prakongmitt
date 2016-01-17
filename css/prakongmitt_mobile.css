@@ -1,0 +1,40 @@
+/* tablet */
+@media (max-width:1024px)
+{
+	
+	.iconTable
+	{
+		display: 
+		width:100%;
+	}
+	/*
+	#tabCate s {
+		
+		/ *width:50%;* /
+		float:left;
+	}*/
+}
+
+/*mobile*/
+@media (max-width:768px)
+{
+
+	div.panel-body {
+		/*width:80%;*/
+		/*height:250px;*/
+		
+	}
+	
+	.iconTable{
+		/*width:200px;*/
+	}
+	
+	.iconCate{
+		width:100%;
+	}
+	
+	
+	#orderitem{
+		/* height:300px;*/
+	}
+}

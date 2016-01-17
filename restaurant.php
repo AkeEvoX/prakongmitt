@@ -19,6 +19,7 @@ if(!isset($_SESSION["profile"]))
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' href='css/bootstrap.min.css' >
 	<link rel='stylesheet' href='css/prakongmitt.css' >
+	<link rel='stylesheet' href='css/prakongmitt_mobile.css' >
 </head>
 <body>
 	<!-- navigator bar -->
@@ -53,9 +54,11 @@ if(!isset($_SESSION["profile"]))
         <div class='row'>
             <div class='col-md-2 nopadding'>
                 <div class="panel panel-success"  id="tabCate" >
-                <div class="panel-heading" ><span class="iconTitle" > <img src="images/icons/Folder-32.png" class="img-responsive" />ประเภทสินค้า</span></div>
-                <div class="panel-body scrollitem" id="listCategory" >
+                <div class="panel-heading" ><span class="iconTitle" > <img src="images/icons/Folder-32.png" class="img-responsive" />รายการโต๊ะ</span></div>
+                <div class="panel-body scrollitem" >
+					<div id="listTablenumber" >
 					
+					</div>
                 </div>
               </div>
             </div>
@@ -63,9 +66,12 @@ if(!isset($_SESSION["profile"]))
                <div class="panel panel-info" id="tabProd">
                 <div class="panel-heading"><span class="iconTitle" > <img src="images/icons/Clipboard-32.png" class="img-responsive" />รายการสินค้า</span></div>
                 <div class="panel-body" style='padding:0;' >
-                  <ol id='naviitem' class="breadcrumb">
-                    <li><a href="#">กรุณาเลือกเมนู</a></li>
-                  </ol>
+				<div id="listCategory" class='menucategory scrollitem' >
+				
+				</div>
+					<ol id='naviitem' class="breadcrumb">
+						<li><a href="#">กรุณาเลือกเมนู</a></li>
+					</ol>
                   <div id='listProduct' class='scrollitem' > 
                   </div>
                 </div>
@@ -154,7 +160,7 @@ if(!isset($_SESSION["profile"]))
 
 	<script src="js/jquery.min.js"></script>
 	<script src='js/bootstrap.js' ></script>
-	<script src='js/pos_ctrl.js' ></script>
+	<script src='js/restaurant_ctrl.js' ></script>
 	<script src='js/category_ctrl.js' ></script>
 	<script src='js/product_ctrl.js' ></script>
 	<script src="js/searchcustomer.js" ></script>

@@ -3,8 +3,11 @@
 $(document).ready(function(){
 	resizepage();
 	cleardata();
-	loadCategory();
+	//loadCategory();
+	loadtablenumbers();
+	loadCategoryRestaurant();
 });
+
 
 $(window).resize(function(){
 	resizepage();
@@ -127,6 +130,64 @@ $('#discountinp').keypress(function(e){
 	
 });
 
+function loadtablenumbers() {
+	
+	$.ajax({
+		url:'controller/restaurant_data.php?rdm='+ new Date().getTime(),
+		data:'type=tables',
+		datatype:'json',
+		type:'GET',
+		contentType: "application/json; charset=utf-8",
+		success: function(data){
+			//listTablenumber
+			
+			var table = $('#listTablenumber');
+			var generateObject = "";
+			
+			if(data.items=='null'){
+					generateObject = "cannot load data.";
+			}
+			
+			jQuery.each(JSON.parse(data.items),function(i,val){	
+			
+				var status = 'success';
+				
+				if(val.status=='1')
+					status = "danger";
+			
+				generateObject+= "<div class='' ><button class='btn btn-"+status+" iconTable'>"+val.number+"</button></div>";
+			});
+			
+			table.html(generateObject);
+			
+		},
+		error : function(xhr,status,error) {
+			alert("load restaurant table error : "+error.message);
+		} 
+		
+	});
+	
+}
+
+function showorder(id)
+{
+	$.ajax({
+		url:'controller/restaurant_data.php?rdm=' + new Date().getTime(),
+		data:'type=order&id='+id,
+		dataType:'json',
+		contentType: "application/json; charset=utf-8",
+		success:function(data){
+			
+				console.log(data.items);
+			
+		},
+		error:function(xhr,status,error){
+			alert(error);
+		}
+	});
+	//var listorder = $('#orderitem');
+}
+
 function validateorder()
 {
 	var result = true;
@@ -217,6 +278,8 @@ function cleardata()
 
 function resizepage()
 {	
+
+
 	var height = $(window).height();
 	var width = $(window).width();
 	var hCate = 0;
