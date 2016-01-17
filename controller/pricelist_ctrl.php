@@ -27,10 +27,17 @@ else if($type=="groups"){
 	$category = $_GET["category"];	
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$sql = " select t1.cateid,t1.prodgroupid,t2.prodGroupName,t2.prodGroupIcon  ";
 	$sql .= " from productlist t1 left join productgroups t2 on t1.prodgroupid=t2.prodgroupid ";
 	$sql .= " where t1.cateid=".$category ;
 	$sql .= " group by t1.cateid,t1.prodgroupid; ";
+=======
+	$sql = " select t1.cateid,t1.prodgroupid,t2.prodGroupName,t2.prodGroupIcon ";
+	$sql .= " from productlist t1 left join productgroups t2 on t1.prodgroupid=t2.prodgroupid ";
+	$sql .= " where t1.cateid=".$category ;
+	$sql .= " group by t1.cateid,t1.prodgroupid ; ";
+>>>>>>> origin/master
 =======
 	$sql = " select t1.cateid,t1.prodgroupid,t2.prodGroupName,t2.prodGroupIcon ";
 	$sql .= " from productlist t1 left join productgroups t2 on t1.prodgroupid=t2.prodgroupid ";

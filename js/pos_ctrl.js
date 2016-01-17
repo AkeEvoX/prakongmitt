@@ -43,9 +43,17 @@ $('#btnSave').click(function(){
 	if(discount=="")
 		discount=0;
 	
+	var discount =  $('#discountinp').val(); 
+	
+	if(discount=="")
+		discount=0;
+	
 	dataSave["orderinfo"] = null;
-<<<<<<< HEAD
 	orderinfo["custid"] = custid;
+=======
+	//orderinfo["custid"] = $('#inputCust').data("custid");
+	orderinfo["discount"] = discount;
+>>>>>>> origin/master
 =======
 	//orderinfo["custid"] = $('#inputCust').data("custid");
 	orderinfo["discount"] = discount;
@@ -140,21 +148,7 @@ function validateorder()
 {
 	var result = true;
 	var errMsg = "";
-	
-	//validate custid
-<<<<<<< HEAD
-	/*
-	if($('#inputCust').data("custid")=="")
-	{
-		errMsg += "- กรุณาเลือกข้อมูลลูกค่า\n";
-	}
-	*/
-=======
-	/*if($('#inputCust').data("custid")=="")
-	{
-		errMsg += "- กรุณาเลือกข้อมูลลูกค่า\n";
-	}*/
->>>>>>> origin/master
+
 	//valide total
 	if($('#totalinp').val()=="")
 	{
@@ -186,7 +180,7 @@ function netcalculate()
 	var total = parseInt($('#totalinp').val());
 	var discount = parseInt($('#discountinp').val());
 	var net = $('#netinp');
-	net.val(total - discount);
+ß	net.val(total - discount);
 }
 
 function FncCalculate()
