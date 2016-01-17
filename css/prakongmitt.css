@@ -11,7 +11,7 @@ html,body {
 
 .scrollmenu
 {
-	/*overflow:scroll;*/
+	overflow:scroll;
 }
 
 .icon30{
@@ -20,12 +20,26 @@ html,body {
 
 }
 
+.iconTable {
+	height:50px;
+	width:130px;
+	margin:5px;
+	float:left;
+	/*height:50px;*/
+}
+
 .iconCate
 {
-	padding:5px;
-	width:90%;
+	float:left;
+	height:80px;	
+	width:150px;
 	margin:5px;
-	
+}
+
+.menucategory{
+	padding-top:5px;
+	padding-bottom:5px;
+	width:100%;
 }
 
 .iconGroup
