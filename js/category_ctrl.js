@@ -14,7 +14,7 @@ function loadCategory()
 		
 		jQuery.each(JSON.parse(data.category), function(i, val) {
 				
-				generateObject += "<button class='btn btn-primary iconCate' onclick=selectCate(this) cateid="+val.id+" cateName='"+val.name+"' ><img src='"+val.icon+"' /><br \><span class='text-center'>"+val.name +"</span></button>";
+				generateObject += "<button class='btn btn-primary' onclick=selectCate(this) cateid="+val.id+" cateName='"+val.name+"' ><img src='"+val.icon+"' /><br /><span class='text-center'>"+val.name +"</span></button>";
 				
 		});
 		
@@ -28,14 +28,13 @@ function loadCategory()
 	  }
 	});
 	
-	
 }
 
-
-function loadCategoryRestaurant()
+function loadCategoryRestaurant(source)
 {
+	//source = controller/category_ctrl.php
 	$.ajax({
-	  url: 'controller/category_ctrl.php',
+	  url: source+"/controller/category_ctrl.php",
 	  type: 'GET',
 	  dataType: "json",
 	  data:'type=load', 
@@ -47,17 +46,16 @@ function loadCategoryRestaurant()
 		
 		jQuery.each(JSON.parse(data.category), function(i, val) {
 				
-				generateObject += "<div class='col-sm-3' ><button class='btn btn-primary iconCate' onclick=selectCate(this) cateid="+val.id+" cateName='"+val.name+"' ><img src='"+val.icon+"' /><br /><span class='text-center'>"+val.name +"</span></button></div>";
+				generateObject += "<div class='col-sm-3' ><button class='btn btn-primary' onclick=selectCate(this) cateid="+val.id+" cateName='"+val.name+"' source='"+source+"' ><img src='"+val.icon+"' /><br /><span class='text-center'>"+val.name +"</span></button></div>";
 				
 		});
 		
 		$('#listCategory').html(generateObject);
 		
-		
 	  },
-	  error: function(e) {
+	  error: function(jqXHR, exception) {
 		//called when there is an error
-		console.log(e.message);
+		console.log("Call Category Error Code " + jqXHR.status + " Desc -> " +jqXHR.responseText);
 	  }
 	});
 	
@@ -69,11 +67,15 @@ function selectCate(cate)
 	
 	try
 	{
+		/*
 		var cateid  = $(cate).attr("cateid");
 		var catename = $(cate).attr('catename');
 
 		//load product group  -> product_ctrl.js
 		selectProductGroup(cateid,catename);
+		*/
+		
+		selectProductGroup(cate);
 		
 	}
 	catch(e)

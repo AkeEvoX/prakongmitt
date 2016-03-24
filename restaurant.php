@@ -1,13 +1,11 @@
 <? 
 session_start();
 
-
 if(!isset($_SESSION["profile"]))
 {
 	echo "<script>alert('please login !!');window.location='login.php';</script>";
 	
 }
-/* hello world's */
 
 ?>
 <!DOCTYPE html>
@@ -18,8 +16,9 @@ if(!isset($_SESSION["profile"]))
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' href='css/bootstrap.min.css' >
-	<link rel='stylesheet' href='css/prakongmitt.css' >
-	<link rel='stylesheet' href='css/prakongmitt_mobile.css' >
+	<!--<link rel='stylesheet' href='css/prakongmitt.css' >-->
+	<link rel='stylesheet' href='css/restaurant.css' >
+	<link rel='stylesheet' href='css/restaurant_mobile.css' >
 </head>
 <body>
 	<!-- navigator bar -->
@@ -50,36 +49,36 @@ if(!isset($_SESSION["profile"]))
         </div><!--/.container-fluid -->
       </nav>
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="container-fluid" style="height:100%">
+      <div class="container-fluid" style="height:100%" >
         <div class='row'>
             <div class='col-md-2 nopadding'>
                 <div class="panel panel-success"  id="tabCate" >
                 <div class="panel-heading" ><span class="iconTitle" > <img src="images/icons/Folder-32.png" class="img-responsive" />รายการโต๊ะ</span></div>
                 <div class="panel-body scrollitem" >
-					<div id="listTablenumber" >
-					</div>
+						<div id="listTablenumber"  ></div>
                 </div>
               </div>
             </div>
             <div class='col-md-5 nopadding'>
                <div class="panel panel-info" id="tabProd">
                 <div class="panel-heading"><span class="iconTitle" > <img src="images/icons/Clipboard-32.png" class="img-responsive" />รายการสินค้า</span></div>
-                <div class="panel-body" style='padding:0;' >
-				<div id="listCategory" class='menucategory scrollitem' >
-				
+                <div class="panel-body scrollitem">
+				<div class='row'>
+					<div id="listCategory" ></div>
 				</div>
-					<ol id='naviitem' class="breadcrumb">
+				<div class='row'>
+					<br />
+					<ol id='naviitem' class="breadcrumb success">
 						<li><a href="#">กรุณาเลือกเมนู</a></li>
 					</ol>
-                  <div id='listProduct' class='scrollitem' > 
-                  </div>
+					  <div id='listProduct' class='scrollitem' > </div>
+				</div>
                 </div>
             </div>
           </div>
             <div class='col-sm-5 nopadding'> 
-			
 			              <!-- Order List -->
-              <div class="panel panel-warning" style='margin:0px;' id="tabCalc">
+              <div class="panel panel-warning" id="tabCalc" style="width:100%;">
                 <div class="panel-heading"><span class="iconTitle" > <img src="images/icons/Shopping-Cart-02-32.png" class="img-responsive" />รายการขาย</span></div>
                 <div class="panel-body">
 						<div class="well well-sm height200 scrollitem" id="orderlist" style="margin-bottom:10px;">
@@ -88,6 +87,8 @@ if(!isset($_SESSION["profile"]))
 						</div>
 							 <!--Calculator-->
 					  <div class="panel panel-danger">
+						<input type='hidden' id='orderid' value='' />
+						<input type='hidden' id='tablenum' value='' />
 						<div class="panel-heading"><span class="iconTitle" > <img src="images/icons/Bid-02-32.png" class="img-responsive" />ข้อมูลชำระเงิน</span></div>
 						<div class="panel-body">
 						  <form class="form-horizontal">  
@@ -124,7 +125,8 @@ if(!isset($_SESSION["profile"]))
 						  <div class="form-group">
 							<div class="col-sm-offset-3 col-sm-9">
 							  <button type="button" id='btnCalculate' class="btn btn-warning"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> คำนวน</button>
-							  <button type="button" id='btnSave' class="btn btn-success"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> บันทึก</button>
+							  <button type="button" id='btnSave' class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> บันทึก</button>
+							  <button type="button" id='btnPay' class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> ชำระ</button>
 							  <button type="button" id='btnCancel' class="btn btn-danger"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> ยกเลิก</button>
 							</div>
 						  </div>

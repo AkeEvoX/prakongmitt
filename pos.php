@@ -19,6 +19,8 @@ if(!isset($_SESSION["profile"]))
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' href='css/bootstrap.min.css' >
 	<link rel='stylesheet' href='css/prakongmitt.css' >
+	<link rel='stylesheet' href='css/pos.css' >
+	<link rel='stylesheet' href='css/pos_mobile.css' >
 </head>
 <body>
 	<!-- navigator bar -->

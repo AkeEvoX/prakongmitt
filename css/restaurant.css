@@ -1,0 +1,142 @@
+
+#tabCate .panel-body{
+	padding:0px;
+}
+
+#tabCate .panel-body .btn{
+/*	height:50px;*/
+}
+
+
+.iconTable {
+	height:50px;
+	width:130px;
+	margin:5px;
+	float:left;
+	/*height:50px;*/
+}
+
+.iconCate
+{
+	float:left;
+	width:100%;
+	margin:0px;
+}
+
+#listCategory .btn {
+	width:100%;
+	height:auto;
+	margin:0px;
+	padding:0px;
+}
+
+#tabProd {
+	
+}
+
+
+.menucategory{
+	
+	/* padding-top:5px;
+	padding-bottom:5px; */
+	width:100%;
+	
+}
+
+.iconGroup
+{
+	border:0px solid;
+	display:inline-block;
+	text-align:center;
+	vartical-align:middle;
+}
+
+.iconGroup img{
+	display:inline-block;
+}
+
+a .iconGroup { padding:5px;margin:0;}
+
+.iconProd {
+	height:130px;
+	display:inline-block;
+	text-align:center;
+	vartical-align:middle;
+}
+
+.iconProd img{ 
+	display:inline-block; 
+}
+
+a .iconProd { padding:5px;margin:0;}
+
+a:hover .iconProd img {
+	border:2px solid #A9BCF5;
+}
+
+.iconMenu
+{
+	display:inline-block;
+	text-align:center;
+	vertical-align:middle;
+	margin-bottom:15px;
+}
+
+.iconMenu img {  display:inline-block; }
+
+
+.iconTitle {
+	display:inline-block;
+	vertical-align:middle;	
+	width:100%;
+}
+
+.iconTitle img{
+	display:inline-block;
+	margin-right:5px;
+}
+
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.hiddenscroll{
+	overflow:auto;
+}
+
+.scrollitem
+{
+	border:0px solid;
+	overflow:auto;
+	overflow-x: hidden;
+}
+
+.height200
+{
+	height:200px;
+}
+
+.height300{
+	height:300px;
+}
+
+.height400
+{
+	height:400px;
+}
+
+.height500
+{
+	height:500px;
+}
+
+.panel-green {
+	background:#E3F6CE;
+	color:white;
+}
+
+.row-buffer{
+	margin-bottom:10px;
+}

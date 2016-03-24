@@ -38,7 +38,7 @@ else if ($type=="page")
 	$page = $_GET["index"];
 	$pagesize = 10 ;
 	
-	$max = ($pagesize * $page) ;
+	$max = ($pagesize * $page);
 	//$min =  $max - $pagesize;
 	
 	/* sample 

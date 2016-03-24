@@ -1,0 +1,56 @@
+/* tablet */
+@media (max-width:1024px)
+{
+	
+	.iconTable
+	{
+		width:100%;
+	}
+	
+	#tabCate s {
+		/*
+		margin:0px;
+		width:50%; 
+		float:left;*/
+	}
+	
+	#tabCalc{
+		width:100%;
+		border:1px solid #aabbcc;
+	}
+}
+
+/*mobile*/
+@media (max-width:768px)
+{
+#tabCate .panel-body {
+	height:200px;
+}
+
+#tabCate .panel-body .btn {
+	margin:0px;
+	float:left;
+	width:25%;
+}
+
+#tabProd .panel-body .btn {
+	margin:5px;
+	width:25%;
+}
+
+#tabCalc{
+	
+		/*width:500px;
+		border:1px solid red;
+		*/
+	}
+
+	.iconCate{
+		width:100%;
+	}
+	
+	#orderitem{
+		/* height:300px;*/
+	}
+	
+}

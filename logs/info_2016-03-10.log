@@ -1,0 +1,306 @@
+2016-03-10 22:26:43 [INFO] get restaurant info> Array
+(
+    [items] => [{"number":"1","order":"87","status":"1"},{"number":"2","order":null,"status":"0"},{"number":"3","order":null,"status":"0"},{"number":"4","order":null,"status":"0"},{"number":"5","order":null,"status":"0"},{"number":"6","order":null,"status":"0"},{"number":"7","order":"90","status":"1"},{"number":"8","order":null,"status":"0"},{"number":"9","order":null,"status":"0"},{"number":"10","order":null,"status":"0"},{"number":"11","order":null,"status":"0"},{"number":"12","order":"89","status":"1"},{"number":"13","order":null,"status":"0"},{"number":"14","order":null,"status":"0"},{"number":"15","order":null,"status":"0"},{"number":"16","order":null,"status":"0"},{"number":"17","order":null,"status":"0"},{"number":"18","order":null,"status":"0"},{"number":"19","order":null,"status":"0"},{"number":"20","order":"91","status":"1"}]
+    [info] => "null"
+)
+
+2016-03-10 22:34:59 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"235","prod":"4","price":"1200","prodgroup":"3","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a\u0e41\u0e01\u0e49\u0e27","prodname":"Van\/SUV"}]
+    [info] => {"total":"1200","net":"1200","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 22:35:00 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:35:01 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:35:01 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"242","prod":"4","price":"180","prodgroup":"1","groupname":"\u0e23\u0e16\u0e02\u0e19\u0e32\u0e14\u0e40\u0e25\u0e47\u0e01","prodname":"Van\/SUV"},{"odid":"241","prod":"3","price":"160","prodgroup":"1","groupname":"\u0e23\u0e16\u0e02\u0e19\u0e32\u0e14\u0e40\u0e25\u0e47\u0e01","prodname":"Ute"}]
+    [info] => {"total":"340","net":"340","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 22:35:01 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:35:02 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:35:03 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"235","prod":"4","price":"1200","prodgroup":"3","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a\u0e41\u0e01\u0e49\u0e27","prodname":"Van\/SUV"}]
+    [info] => {"total":"1200","net":"1200","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 22:35:03 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:35:04 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:35:04 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"233","prod":"3","price":"450","prodgroup":"2","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e02\u0e31\u0e14\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a","prodname":"Ute"},{"odid":"234","prod":"4","price":"500","prodgroup":"2","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e02\u0e31\u0e14\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a","prodname":"Van\/SUV"}]
+    [info] => {"total":"950","net":"950","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 22:40:02 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"235","prod":"4","price":"1200","prodgroup":"3","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a\u0e41\u0e01\u0e49\u0e27","prodname":"Van\/SUV"}]
+    [info] => {"total":"1200","net":"1200","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 22:40:03 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"233","prod":"3","price":"450","prodgroup":"2","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e02\u0e31\u0e14\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a","prodname":"Ute"},{"odid":"234","prod":"4","price":"500","prodgroup":"2","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e02\u0e31\u0e14\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a","prodname":"Van\/SUV"}]
+    [info] => {"total":"950","net":"950","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 22:40:03 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:40:03 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:40:04 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:40:04 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"235","prod":"4","price":"1200","prodgroup":"3","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a\u0e41\u0e01\u0e49\u0e27","prodname":"Van\/SUV"}]
+    [info] => {"total":"1200","net":"1200","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 22:40:05 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:40:05 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:40:05 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"242","prod":"4","price":"180","prodgroup":"1","groupname":"\u0e23\u0e16\u0e02\u0e19\u0e32\u0e14\u0e40\u0e25\u0e47\u0e01","prodname":"Van\/SUV"},{"odid":"241","prod":"3","price":"160","prodgroup":"1","groupname":"\u0e23\u0e16\u0e02\u0e19\u0e32\u0e14\u0e40\u0e25\u0e47\u0e01","prodname":"Ute"}]
+    [info] => {"total":"340","net":"340","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 22:40:06 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:40:10 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:40:11 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:40:11 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:40:11 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:40:12 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:40:12 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:40:12 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 22:41:47 [INFO] get restaurant info> Array
+(
+    [items] => [{"number":"1","order":"87","status":"1"},{"number":"2","order":null,"status":"0"},{"number":"3","order":null,"status":"0"},{"number":"4","order":null,"status":"0"},{"number":"5","order":null,"status":"0"},{"number":"6","order":null,"status":"0"},{"number":"7","order":"90","status":"1"},{"number":"8","order":null,"status":"0"},{"number":"9","order":null,"status":"0"},{"number":"10","order":null,"status":"0"},{"number":"11","order":null,"status":"0"},{"number":"12","order":"89","status":"1"},{"number":"13","order":null,"status":"0"},{"number":"14","order":null,"status":"0"},{"number":"15","order":null,"status":"0"},{"number":"16","order":null,"status":"0"},{"number":"17","order":null,"status":"0"},{"number":"18","order":null,"status":"0"},{"number":"19","order":null,"status":"0"},{"number":"20","order":"91","status":"1"}]
+    [info] => "null"
+)
+
+2016-03-10 22:41:49 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 23:34:55 [INFO] get restaurant info> Array
+(
+    [items] => [{"number":"1","order":"87","status":"1"},{"number":"2","order":null,"status":"0"},{"number":"3","order":null,"status":"0"},{"number":"4","order":null,"status":"0"},{"number":"5","order":null,"status":"0"},{"number":"6","order":null,"status":"0"},{"number":"7","order":"90","status":"1"},{"number":"8","order":null,"status":"0"},{"number":"9","order":null,"status":"0"},{"number":"10","order":null,"status":"0"},{"number":"11","order":null,"status":"0"},{"number":"12","order":"89","status":"1"},{"number":"13","order":null,"status":"0"},{"number":"14","order":null,"status":"0"},{"number":"15","order":null,"status":"0"},{"number":"16","order":null,"status":"0"},{"number":"17","order":null,"status":"0"},{"number":"18","order":null,"status":"0"},{"number":"19","order":null,"status":"0"},{"number":"20","order":"91","status":"1"}]
+    [info] => "null"
+)
+
+2016-03-10 23:35:05 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 23:35:05 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 23:35:05 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 23:35:06 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"242","prod":"4","price":"180","prodgroup":"1","groupname":"\u0e23\u0e16\u0e02\u0e19\u0e32\u0e14\u0e40\u0e25\u0e47\u0e01","prodname":"Van\/SUV"},{"odid":"241","prod":"3","price":"160","prodgroup":"1","groupname":"\u0e23\u0e16\u0e02\u0e19\u0e32\u0e14\u0e40\u0e25\u0e47\u0e01","prodname":"Ute"}]
+    [info] => {"total":"340","net":"340","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 23:35:06 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 23:35:06 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 23:35:07 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 23:35:07 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"242","prod":"4","price":"180","prodgroup":"1","groupname":"\u0e23\u0e16\u0e02\u0e19\u0e32\u0e14\u0e40\u0e25\u0e47\u0e01","prodname":"Van\/SUV"},{"odid":"241","prod":"3","price":"160","prodgroup":"1","groupname":"\u0e23\u0e16\u0e02\u0e19\u0e32\u0e14\u0e40\u0e25\u0e47\u0e01","prodname":"Ute"}]
+    [info] => {"total":"340","net":"340","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 23:35:08 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 23:35:08 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 23:35:09 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 23:35:09 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"235","prod":"4","price":"1200","prodgroup":"3","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a\u0e41\u0e01\u0e49\u0e27","prodname":"Van\/SUV"}]
+    [info] => {"total":"1200","net":"1200","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 23:35:10 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"233","prod":"3","price":"450","prodgroup":"2","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e02\u0e31\u0e14\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a","prodname":"Ute"},{"odid":"234","prod":"4","price":"500","prodgroup":"2","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e02\u0e31\u0e14\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a","prodname":"Van\/SUV"}]
+    [info] => {"total":"950","net":"950","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 23:35:11 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"240","prod":"2","price":"400","prodgroup":"2","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e02\u0e31\u0e14\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a","prodname":"Car"}]
+    [info] => {"total":"400","net":"400","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 23:35:12 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"233","prod":"3","price":"450","prodgroup":"2","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e02\u0e31\u0e14\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a","prodname":"Ute"},{"odid":"234","prod":"4","price":"500","prodgroup":"2","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e02\u0e31\u0e14\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a","prodname":"Van\/SUV"}]
+    [info] => {"total":"950","net":"950","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 23:35:13 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"235","prod":"4","price":"1200","prodgroup":"3","groupname":"\u0e25\u0e49\u0e32\u0e07\u0e40\u0e04\u0e25\u0e37\u0e2d\u0e1a\u0e41\u0e01\u0e49\u0e27","prodname":"Van\/SUV"}]
+    [info] => {"total":"1200","net":"1200","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 23:35:13 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-03-10 23:35:14 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"242","prod":"4","price":"180","prodgroup":"1","groupname":"\u0e23\u0e16\u0e02\u0e19\u0e32\u0e14\u0e40\u0e25\u0e47\u0e01","prodname":"Van\/SUV"},{"odid":"241","prod":"3","price":"160","prodgroup":"1","groupname":"\u0e23\u0e16\u0e02\u0e19\u0e32\u0e14\u0e40\u0e25\u0e47\u0e01","prodname":"Ute"}]
+    [info] => {"total":"340","net":"340","receive":"0","change":"0","discount":"0"}
+)
+
+2016-03-10 23:36:06 [INFO] get restaurant info> Array
+(
+    [items] => [{"number":"1","order":"87","status":"1"},{"number":"2","order":null,"status":"0"},{"number":"3","order":null,"status":"0"},{"number":"4","order":null,"status":"0"},{"number":"5","order":null,"status":"0"},{"number":"6","order":null,"status":"0"},{"number":"7","order":"90","status":"1"},{"number":"8","order":null,"status":"0"},{"number":"9","order":null,"status":"0"},{"number":"10","order":null,"status":"0"},{"number":"11","order":null,"status":"0"},{"number":"12","order":"89","status":"1"},{"number":"13","order":null,"status":"0"},{"number":"14","order":null,"status":"0"},{"number":"15","order":null,"status":"0"},{"number":"16","order":null,"status":"0"},{"number":"17","order":null,"status":"0"},{"number":"18","order":null,"status":"0"},{"number":"19","order":null,"status":"0"},{"number":"20","order":"91","status":"1"}]
+    [info] => "null"
+)
+
+2016-03-10 23:36:08 [INFO] get restaurant info> Array
+(
+    [items] => [{"number":"1","order":"87","status":"1"},{"number":"2","order":null,"status":"0"},{"number":"3","order":null,"status":"0"},{"number":"4","order":null,"status":"0"},{"number":"5","order":null,"status":"0"},{"number":"6","order":null,"status":"0"},{"number":"7","order":"90","status":"1"},{"number":"8","order":null,"status":"0"},{"number":"9","order":null,"status":"0"},{"number":"10","order":null,"status":"0"},{"number":"11","order":null,"status":"0"},{"number":"12","order":"89","status":"1"},{"number":"13","order":null,"status":"0"},{"number":"14","order":null,"status":"0"},{"number":"15","order":null,"status":"0"},{"number":"16","order":null,"status":"0"},{"number":"17","order":null,"status":"0"},{"number":"18","order":null,"status":"0"},{"number":"19","order":null,"status":"0"},{"number":"20","order":"91","status":"1"}]
+    [info] => "null"
+)
+

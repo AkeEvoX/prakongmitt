@@ -1,13 +1,11 @@
 
-
 $(document).ready(function(){
 	resizepage();
 	cleardata();
 	//loadCategory();
 	loadtablenumbers();
-	loadCategoryRestaurant();
+	loadCategoryRestaurant('pages/restaurant');
 });
-
 
 $(window).resize(function(){
 	resizepage();
@@ -20,6 +18,81 @@ $('#btnCalculate').click(function (){
 });
 
 $('#btnSave').click(function(){
+	//declare attrtibute
+	var id = $('#orderid').val();
+	var tablenum = $('#tablenum').val();
+	
+	var dataSave = {};
+	var orderinfo = {};
+	
+	
+	var discount =  $('#discountinp').val(); 
+	var receive = $('#receiveinp').val();
+	var change = $('#returninp').val();
+	var net = $('#netinp').val();
+	
+	if(discount=="")
+		discount=0;
+	
+	if(receive=="")
+		receive=0;
+	
+	if(change=="")
+		change=0;
+	
+	//initial order info for save
+	dataSave["orderinfo"] = null;
+
+	orderinfo["orderid"] = $('#orderid').val();
+	orderinfo["tablenum"] = $('#tablenum').val();
+	orderinfo["discount"] = discount;
+	orderinfo["total"] = $('#totalinp').val();
+	orderinfo["receive"] = receive;
+	orderinfo["return"] = change;
+	orderinfo["net"] = net;
+	dataSave["orderinfo"] = orderinfo;
+	
+	dataSave["orderdetail"] = [];
+	$('#orderitem li').each(function(idx,order){
+		
+		var proid = $(order).attr("id");
+		var price = $(order).attr("price");
+		var groupid = $(order).attr("groupid");
+		var item = {};
+		item["proid"] = proid;
+		item["price"] = price;
+		item["groupid"] = groupid;
+		
+		dataSave["orderdetail"].push(item);
+		
+	});
+	
+	console.log('save order => ' + JSON.stringify(dataSave));
+
+	// save order
+	$.ajax({
+		url:"pages/restarant/controller/ordersave_ctrl.php?rdm=" + new Date().getTime(),
+		type:'POST',
+		data:JSON.stringify(dataSave),
+		contentType: "application/json; charset=utf-8",
+		dataType:"json",
+		success : function(data){
+			
+			alert(data.result);
+			cleardata();
+			loadtablenumbers();
+			
+		},
+		error:function(xhr, status, error){
+			console.log(xhr.responseText);
+		}
+	});
+	
+});
+
+$('#btnPay').click(function(){
+
+	console.log('click pay.');
 	
 	//validate data before save
 	if(!validateorder())
@@ -40,19 +113,24 @@ $('#btnSave').click(function(){
 	
 	if(discount=="")
 		discount=0;
+
+	//console.log('orderid is ' + $('#orderid').val());
+	//console.log('tablenum is ' + $('#tablenum').val());
 	
 	dataSave["orderinfo"] = null;
-	//orderinfo["custid"] = $('#inputCust').data("custid");
+	orderinfo["orderid"] = $('#orderid').val();
 	orderinfo["discount"] = discount;
 	orderinfo["total"] = $('#totalinp').val();
 	orderinfo["receive"] = $('#receiveinp').val();
 	orderinfo["return"] = $('#returninp').val();
-	
+	orderinfo["tablenum"] = $('#tablenum').val();
+	orderinfo["net"] = $('#netinp').val();
 	dataSave["orderinfo"] = orderinfo;
 	
 	
 	dataSave["orderdetail"] = [];
 	$('#orderitem li').each(function(idx,order){
+		
 		var proid = $(order).attr("id");
 		var price = $(order).attr("price");
 		var groupid = $(order).attr("groupid");
@@ -65,19 +143,18 @@ $('#btnSave').click(function(){
 		
 	});
 
-	//console.log(JSON.stringify(dataSave));
+	console.log(JSON.stringify(dataSave));
 	
 	$.ajax({
-		url:"controller/order_ctrl.php",
+		url:"pages/restaurant/controller/order_ctrl.php?rdm=" + new Date().getTime(),
 		type:'POST',
 		data:JSON.stringify(dataSave),
 		contentType: "application/json; charset=utf-8",
 		dataType:"json",
 		success : function(data){
-			
 			alert(data.result);
 			cleardata();
-			
+			loadtablenumbers();
 		},
 		error:function(xhr, status, error){
 			console.log(xhr.responseText);
@@ -109,7 +186,7 @@ $('#receiveinp').keypress(function(e){
 			FncCalculate();
 		}
 		else{ /*second enter for save*/
-			$('#btnSave').click();
+			$('#btnPay').click();
 		}
 	}
 	
@@ -119,6 +196,14 @@ $('#btnCancel').click(function(e){
 	if(confirm('ยกเลิกรายการ ? ')){
 		cleardata();
 	}
+});
+
+$('#discountinp').keyup(function(e){
+	
+	var code = (e.keyCode ? e.keyCode : e.which);
+	
+	this.value = this.value.replace(/[^0-9\.]/g,'');
+	
 });
 
 $('#discountinp').keypress(function(e){
@@ -131,9 +216,12 @@ $('#discountinp').keypress(function(e){
 });
 
 function loadtablenumbers() {
+
+	//loading data
+
 	
 	$.ajax({
-		url:'controller/restaurant_data.php?rdm='+ new Date().getTime(),
+		url:'pages/restaurant/controller/restaurant_data.php?rdm='+ new Date().getTime(),
 		data:'type=tables',
 		datatype:'json',
 		type:'GET',
@@ -142,6 +230,7 @@ function loadtablenumbers() {
 			//listTablenumber
 			
 			var table = $('#listTablenumber');
+			table.html("");
 			var generateObject = "";
 			
 			if(data.items=='null'){
@@ -152,13 +241,14 @@ function loadtablenumbers() {
 			
 				var status = 'success';
 				
-				if(val.status=='1')
+				if(val.status=='1') //not availible
 					status = "danger";
 			
-				generateObject+= "<div class='' ><button class='btn btn-"+status+" iconTable'>"+val.number+"</button></div>";
+				//generateObject+= "<button class='btn btn-"+status+" col-md-6'  onclick='showorder("+val.order+","+val.number+")'  ><img src='images/icons/restaurant_icon_32.png' /><br/><b>"+val.number+"</b></button>";
+				table.append("<button class='btn btn-"+status+" col-md-6'  onclick='showorder("+val.order+","+val.number+")'  ><img src='images/icons/restaurant_icon_32.png' /><br/><b>"+val.number+"</b></button>");
 			});
 			
-			table.html(generateObject);
+			//table.html(generateObject);
 			
 		},
 		error : function(xhr,status,error) {
@@ -169,23 +259,69 @@ function loadtablenumbers() {
 	
 }
 
-function showorder(id)
+function showorder(id,tablenum)
 {
+		console.log("orderid = " + id);
+
+		$('#orderid').val(id);
+		$('#tablenum').val(tablenum);
+
 	$.ajax({
-		url:'controller/restaurant_data.php?rdm=' + new Date().getTime(),
+		url:'pages/restaurant/controller/restaurant_data.php?rdm=' + new Date().getTime(),
 		data:'type=order&id='+id,
 		dataType:'json',
 		contentType: "application/json; charset=utf-8",
 		success:function(data){
 			
-				console.log(data.items);
+		console.log(data.items);
+		
+		$('#totalinp').val(0);
+		$('#netinp').val(0);
+		$('#orderitem').empty();
+		if(data.items=="null") 
+		{
+			$('#orderitem').html('<li class="list-group-item list-group-item-warning">กรุณาเลือกสินค้า</li>');
+			return;
+		}
+		
+		
+		//var totalitem = 0 ;
+		//var total = 0 ;
+		jQuery.each(JSON.parse(data.items),function(i,val){	
+		
+			$('#orderitem').append('<li class="list-group-item list-group-item-info" id="'
+				+val.prod+'" price="'
+				+val.price+'" groupid="'
+				+val.prodgroup+'" >'
+				+val.groupname+' > '
+				+val.prodname+' ('+val.price+')<button type="button" class="close" onclick=delProduct(this) proid="'+val.prod+'" price="'+val.price+'"  ><span >&times;</span></button></li>').fadeIn('slow');
+				
+				//totalitem++;
+				//total = parseInt(total) + parseInt(val.price);	
+		});
+
+		console.log(data.info);
+		
+		if(data.info!="null")
+		{
+			var info = JSON.parse(data.info);
+			$('#totalinp').val(info.total);
+			$('#discountinp').val(info.discount);
+			$('#netinp').val(info.net);
+			$('#returninp').val(info.change);
+			$('#reciveinp').val(info.receive);
+				
+		}
+	
+		
 			
 		},
 		error:function(xhr,status,error){
 			alert(error);
 		}
+		
 	});
-	//var listorder = $('#orderitem');
+	
 }
 
 function validateorder()
@@ -246,8 +382,6 @@ function FncCalculate()
 		return false;
 	}
 	
-	//net
-	
 	returnMoney = receive - net;
 	$('#returninp').val(returnMoney);
 	
@@ -297,6 +431,7 @@ function resizepage()
 	
 	$('#tabCate').height(height);
 	$('#tabProd').height(height);
+	$('#tabCate .scrollitem').height(height-50);
 	if(height > 300)
 	{	
 		$('#tabCalc').height(height); 

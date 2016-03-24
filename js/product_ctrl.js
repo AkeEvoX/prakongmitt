@@ -2,13 +2,14 @@
 function selectProductGroup(cateid,catename)
 {
 		try{
+
 			$('#listProduct').empty();
 			$('#naviitem').empty();
 			$('#naviitem').html('<li><a href="#"  onclick=selectProductGroup('+cateid+',"'+catename+'")    >'+catename+'</a></li>');
 			//url:'controller/productgroup_ctrl.php?rdm='+new Date().getTime(),
 			$.ajax(
 			{
-				url:'controller/pricelist_ctrl.php?rdm='+new Date().getTime(),
+				url:'controller/pricelist_ctrl.php?rdm='+new Date().getTime(), 
 				type:'GET',
 				data:'type=groups&category='+cateid,
 				dataType:'json',
@@ -16,6 +17,15 @@ function selectProductGroup(cateid,catename)
 					
 					var generateObject = "";
 					var icon = "";
+					
+					/*
+					icon = "<a href='#' onclick=showProductList(this) cateid='"+cateid+"' groupid="+val.id+" groupname='"+val.name+"' >";
+						icon += "<div class='col-md-3 iconProd' >";
+						icon += "<img src='"+val.icon+"' class='img-responsive'  style='width:100px;'  /><br />";
+						icon += val.name;
+						icon += "</div></a>";
+					*/
+					
 					if(result.items!="null")
 					{
 						jQuery.each(JSON.parse(result.items),function(i,val){
@@ -29,13 +39,77 @@ function selectProductGroup(cateid,catename)
 							generateObject += icon;
 						});
 					}
+
 					
 					$('#listProduct').html(generateObject);
 
 				},
-				error:function(e)
+				error:function(xhr, status, error)
 				{
-					console.log(e.message);
+					console.log(xhr.responseText);
+				}
+			});
+			
+		}
+		catch(e)
+		{
+			console.log(e.description);
+		}
+}
+
+function selectProductGroup(cate)
+{
+		try{
+			var cateid  = $(cate).attr("cateid");
+			var catename = $(cate).attr('catename');
+			var source= $(cate).attr('source');
+			
+			console.log('selectProductGroup src=' + source);
+			
+			$('#listProduct').empty();
+			$('#naviitem').empty();
+			$('#naviitem').html('<li><a href="#"  onclick=selectProductGroup('+cate+')   >'+catename+'</a></li>');
+			//url:'controller/productgroup_ctrl.php?rdm='+new Date().getTime(),
+			$.ajax(
+			{
+				url:source+'/controller/pricelist_ctrl.php?rdm='+new Date().getTime(), 
+				type:'GET',
+				data:'type=groups&category='+cateid,
+				dataType:'json',
+				success:function(result){
+					
+					var generateObject = "";
+					var icon = "";
+					
+					/*
+					icon = "<a href='#' onclick=showProductList(this) cateid='"+cateid+"' groupid="+val.id+" groupname='"+val.name+"' >";
+						icon += "<div class='col-md-3 iconProd' >";
+						icon += "<img src='"+val.icon+"' class='img-responsive'  style='width:100px;'  /><br />";
+						icon += val.name;
+						icon += "</div></a>";
+					*/
+					
+					if(result.items!="null")
+					{
+						jQuery.each(JSON.parse(result.items),function(i,val){
+							
+							icon = "<a href='#' onclick=showProductList(this) cateid='"+cateid+"' groupid="+val.id+" groupname='"+val.name+"' source='"+source+"' >";
+							icon += "<div class='col-md-3 iconProd' >";
+							icon += "<img src='"+val.icon+"' class='img-responsive'  style='width:100px;'  /><br />";
+							icon += val.name;
+							icon += "</div></a>";
+							
+							generateObject += icon;
+						});
+					}
+
+					
+					$('#listProduct').html(generateObject);
+
+				},
+				error:function(xhr, status, error)
+				{
+					console.log(xhr.responseText);
 				}
 			});
 			
@@ -51,13 +125,16 @@ function showProductList(group)
 		var cateid = $(group).attr('cateid');
 		var groupid = $(group).attr('groupid');				
 		var groupname = $(group).attr('groupname');
+		var source = $(group).attr('source');
 		var currentNavi = $("#naviitem li").eq(0).html();
+		
+		console.log('showProductList src=' + source);
 		
 		$('#naviitem').empty();
 		$('#naviitem').html("<li>"+currentNavi+ '</li><li>'+groupname+'</li>');
 
 		$.ajax({
-			url:'controller/pricelist_ctrl.php?rdm='+new Date().getTime(),
+			url:source + '/controller/pricelist_ctrl.php?rdm='+new Date().getTime(),
 			type:'GET',
 			data:'type=products&category='+cateid+'&group='+groupid,
 			dataType:"json",
@@ -78,8 +155,8 @@ function showProductList(group)
 			
 			  $('#listProduct').html(generateObject);
 			},
-			error:function(e){
-				console.log(e.message);
+			error:function(xhr, status, error){
+				console.log(xhr.responseText);
 			}
 			
 		});
@@ -128,12 +205,19 @@ function selectProduct(pro)
 
 function delProduct(pro)
 {
-
+	
 	var proid = $(pro).attr("proid");
 	var price = $(pro).attr("price");
 	var total = $('#totalinp').val();
+	var discount = $('#discountinp');
+	var net = $('#netinp');
 
 	total = parseInt(total) - parseInt(price);
+	
+	if(net.val()!="")
+	{
+		net.val(total);
+	}
 	
 	if(total=="0")
 	{

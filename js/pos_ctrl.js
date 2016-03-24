@@ -52,7 +52,7 @@ $('#btnSave').click(function(){
 	orderinfo["total"] = $('#totalinp').val();
 	orderinfo["receive"] = $('#receiveinp').val();
 	orderinfo["return"] = $('#returninp').val();
-	
+	orderinfo["net"] = $('#netinp').val();
 	dataSave["orderinfo"] = orderinfo;
 	
 	

@@ -1,0 +1,6 @@
+2016-03-15 21:52:25 [INFO] get restaurant info> Array
+(
+    [items] => [{"number":"1","order":"87","status":"1"},{"number":"2","order":null,"status":"0"},{"number":"3","order":null,"status":"0"},{"number":"4","order":null,"status":"0"},{"number":"5","order":null,"status":"0"},{"number":"6","order":null,"status":"0"},{"number":"7","order":"90","status":"1"},{"number":"8","order":null,"status":"0"},{"number":"9","order":null,"status":"0"},{"number":"10","order":null,"status":"0"},{"number":"11","order":null,"status":"0"},{"number":"12","order":"89","status":"1"},{"number":"13","order":null,"status":"0"},{"number":"14","order":null,"status":"0"},{"number":"15","order":null,"status":"0"},{"number":"16","order":null,"status":"0"},{"number":"17","order":null,"status":"0"},{"number":"18","order":null,"status":"0"},{"number":"19","order":null,"status":"0"},{"number":"20","order":"91","status":"1"}]
+    [info] => "null"
+)
+

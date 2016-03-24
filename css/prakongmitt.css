@@ -20,6 +20,7 @@ html,body {
 
 }
 
+
 #tabCate .panel-body{
 
 	padding:0px;
@@ -47,41 +48,16 @@ html,body {
 	margin:5px;
 }
 
+
 .menucategory{
-	padding-top:5px;
-	padding-bottom:5px;
+	
+	/* padding-top:5px;
+	padding-bottom:5px; */
 	width:100%;
+	
 }
 
-.iconGroup
-{
-	border:0px solid;
-	display:inline-block;
-	text-align:center;
-	vartical-align:middle;
-}
-.iconGroup img{
-	display:inline-block;
-}
 
-a .iconGroup { padding:5px;margin:0;}
-
-.iconProd {
-	height:130px;
-	display:inline-block;
-	text-align:center;
-	vartical-align:middle;
-}
-
-.iconProd img{ 
-	display:inline-block; 
-}
-
-a .iconProd { padding:5px;margin:0;}
-
-a:hover .iconProd img {
-	border:2px solid #A9BCF5;
-}
 
 .iconMenu
 {
@@ -92,19 +68,6 @@ a:hover .iconProd img {
 }
 
 .iconMenu img {  display:inline-block; }
-
-
-.iconTitle {
-	display:inline-block;
-	vertical-align:middle;	
-	width:100%;
-}
-
-.iconTitle img{
-	display:inline-block;
-	margin-right:5px;
-}
-
 
 .nopadding {
    padding: 0 !important;

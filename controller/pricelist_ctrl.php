@@ -1,7 +1,6 @@
 <?
 include('connect.php');
 
-
 $type = $_GET["type"];
 
 $Items = array();
