@@ -1,0 +1,342 @@
+2016-04-09 15:06:22 [INFO] get restaurant info> Array
+(
+    [items] => [{"number":"1","order":"87","status":"1"},{"number":"2","order":null,"status":"0"},{"number":"3","order":null,"status":"0"},{"number":"4","order":null,"status":"0"},{"number":"5","order":null,"status":"0"},{"number":"6","order":null,"status":"0"},{"number":"7","order":"90","status":"1"},{"number":"8","order":null,"status":"0"},{"number":"9","order":null,"status":"0"},{"number":"10","order":null,"status":"0"},{"number":"11","order":null,"status":"0"},{"number":"12","order":"89","status":"1"},{"number":"13","order":null,"status":"0"},{"number":"14","order":null,"status":"0"},{"number":"15","order":null,"status":"0"},{"number":"16","order":null,"status":"0"},{"number":"17","order":null,"status":"0"},{"number":"18","order":null,"status":"0"},{"number":"19","order":null,"status":"0"},{"number":"20","order":"91","status":"1"}]
+    [info] => "null"
+)
+
+2016-04-09 15:06:25 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"235","prod":"4","price":"1200","prodgroup":"3","groupname":"\u0e1c\u0e31\u0e14\u0e1c\u0e31\u0e01","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"}]
+    [info] => {"total":"1200","net":"1200","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 15:06:26 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"233","prod":"3","price":"450","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e15\u0e49\u0e21\u0e22\u0e33\u0e23\u0e27\u0e21\u0e21\u0e34\u0e15\u0e23"},{"odid":"234","prod":"4","price":"500","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"}]
+    [info] => {"total":"950","net":"950","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 15:06:27 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"242","prod":"4","price":"180","prodgroup":"1","groupname":"\u0e02\u0e49\u0e32\u0e27","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"},{"odid":"241","prod":"3","price":"160","prodgroup":"1","groupname":"\u0e02\u0e49\u0e32\u0e27","prodname":"\u0e15\u0e49\u0e21\u0e22\u0e33\u0e23\u0e27\u0e21\u0e21\u0e34\u0e15\u0e23"}]
+    [info] => {"total":"340","net":"340","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 15:20:09 [INFO] get restaurant info> Array
+(
+    [items] => [{"number":"1","order":"87","status":"1"},{"number":"2","order":null,"status":"0"},{"number":"3","order":null,"status":"0"},{"number":"4","order":null,"status":"0"},{"number":"5","order":null,"status":"0"},{"number":"6","order":null,"status":"0"},{"number":"7","order":"90","status":"1"},{"number":"8","order":null,"status":"0"},{"number":"9","order":null,"status":"0"},{"number":"10","order":null,"status":"0"},{"number":"11","order":null,"status":"0"},{"number":"12","order":"89","status":"1"},{"number":"13","order":null,"status":"0"},{"number":"14","order":null,"status":"0"},{"number":"15","order":null,"status":"0"},{"number":"16","order":null,"status":"0"},{"number":"17","order":null,"status":"0"},{"number":"18","order":null,"status":"0"},{"number":"19","order":null,"status":"0"},{"number":"20","order":"91","status":"1"}]
+    [info] => "null"
+)
+
+2016-04-09 15:20:11 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"235","prod":"4","price":"1200","prodgroup":"3","groupname":"\u0e1c\u0e31\u0e14\u0e1c\u0e31\u0e01","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"}]
+    [info] => {"total":"1200","net":"1200","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 15:20:14 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:50:02 [INFO] get restaurant info> Array
+(
+    [items] => [{"number":"1","order":"87","status":"1"},{"number":"2","order":null,"status":"0"},{"number":"3","order":null,"status":"0"},{"number":"4","order":null,"status":"0"},{"number":"5","order":null,"status":"0"},{"number":"6","order":null,"status":"0"},{"number":"7","order":"90","status":"1"},{"number":"8","order":null,"status":"0"},{"number":"9","order":null,"status":"0"},{"number":"10","order":null,"status":"0"},{"number":"11","order":null,"status":"0"},{"number":"12","order":"89","status":"1"},{"number":"13","order":null,"status":"0"},{"number":"14","order":null,"status":"0"},{"number":"15","order":null,"status":"0"},{"number":"16","order":null,"status":"0"},{"number":"17","order":null,"status":"0"},{"number":"18","order":null,"status":"0"},{"number":"19","order":null,"status":"0"},{"number":"20","order":"91","status":"1"}]
+    [info] => "null"
+)
+
+2016-04-09 18:50:12 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:50:15 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:50:16 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:50:17 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:50:17 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:50:17 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:50:18 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:50:18 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:50:19 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:50:19 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:51:00 [INFO] get restaurant info> Array
+(
+    [items] => [{"number":"1","order":"87","status":"1"},{"number":"2","order":null,"status":"0"},{"number":"3","order":null,"status":"0"},{"number":"4","order":"92","status":"1"},{"number":"5","order":null,"status":"0"},{"number":"6","order":null,"status":"0"},{"number":"7","order":"90","status":"1"},{"number":"8","order":null,"status":"0"},{"number":"9","order":null,"status":"0"},{"number":"10","order":null,"status":"0"},{"number":"11","order":null,"status":"0"},{"number":"12","order":"89","status":"1"},{"number":"13","order":null,"status":"0"},{"number":"14","order":null,"status":"0"},{"number":"15","order":null,"status":"0"},{"number":"16","order":null,"status":"0"},{"number":"17","order":null,"status":"0"},{"number":"18","order":null,"status":"0"},{"number":"19","order":null,"status":"0"},{"number":"20","order":"91","status":"1"}]
+    [info] => "null"
+)
+
+2016-04-09 18:51:01 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:51:03 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:51:03 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"243","prod":"1","price":"80","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e02\u0e48\u0e32\u0e27\u0e1c\u0e31\u0e14\u0e21\u0e31\u0e19\u0e01\u0e38\u0e49\u0e07\u0e40\u0e25\u0e47\u0e01"}]
+    [info] => {"total":"80","net":"80","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 18:51:04 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"235","prod":"4","price":"1200","prodgroup":"3","groupname":"\u0e1c\u0e31\u0e14\u0e1c\u0e31\u0e01","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"}]
+    [info] => {"total":"1200","net":"1200","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 18:51:05 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"243","prod":"1","price":"80","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e02\u0e48\u0e32\u0e27\u0e1c\u0e31\u0e14\u0e21\u0e31\u0e19\u0e01\u0e38\u0e49\u0e07\u0e40\u0e25\u0e47\u0e01"}]
+    [info] => {"total":"80","net":"80","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 18:51:20 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:51:22 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:51:24 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 18:51:29 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"233","prod":"3","price":"450","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e15\u0e49\u0e21\u0e22\u0e33\u0e23\u0e27\u0e21\u0e21\u0e34\u0e15\u0e23"},{"odid":"234","prod":"4","price":"500","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"}]
+    [info] => {"total":"950","net":"950","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:06:32 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 20:06:33 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 20:06:33 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"243","prod":"1","price":"80","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e02\u0e48\u0e32\u0e27\u0e1c\u0e31\u0e14\u0e21\u0e31\u0e19\u0e01\u0e38\u0e49\u0e07\u0e40\u0e25\u0e47\u0e01"}]
+    [info] => {"total":"80","net":"80","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:06:34 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"235","prod":"4","price":"1200","prodgroup":"3","groupname":"\u0e1c\u0e31\u0e14\u0e1c\u0e31\u0e01","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"}]
+    [info] => {"total":"1200","net":"1200","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:06:35 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"242","prod":"4","price":"180","prodgroup":"1","groupname":"\u0e02\u0e49\u0e32\u0e27","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"},{"odid":"241","prod":"3","price":"160","prodgroup":"1","groupname":"\u0e02\u0e49\u0e32\u0e27","prodname":"\u0e15\u0e49\u0e21\u0e22\u0e33\u0e23\u0e27\u0e21\u0e21\u0e34\u0e15\u0e23"}]
+    [info] => {"total":"340","net":"340","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:06:36 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"233","prod":"3","price":"450","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e15\u0e49\u0e21\u0e22\u0e33\u0e23\u0e27\u0e21\u0e21\u0e34\u0e15\u0e23"},{"odid":"234","prod":"4","price":"500","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"}]
+    [info] => {"total":"950","net":"950","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:06:37 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"240","prod":"2","price":"400","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e1c\u0e31\u0e01\u0e1a\u0e38\u0e49\u0e07\u0e44\u0e1f\u0e41\u0e14\u0e07"}]
+    [info] => {"total":"400","net":"400","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:06:39 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"233","prod":"3","price":"450","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e15\u0e49\u0e21\u0e22\u0e33\u0e23\u0e27\u0e21\u0e21\u0e34\u0e15\u0e23"},{"odid":"234","prod":"4","price":"500","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"}]
+    [info] => {"total":"950","net":"950","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:52:31 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 20:52:32 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"243","prod":"1","price":"80","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e02\u0e48\u0e32\u0e27\u0e1c\u0e31\u0e14\u0e21\u0e31\u0e19\u0e01\u0e38\u0e49\u0e07\u0e40\u0e25\u0e47\u0e01"}]
+    [info] => {"total":"80","net":"80","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:52:37 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"242","prod":"4","price":"180","prodgroup":"1","groupname":"\u0e02\u0e49\u0e32\u0e27","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"},{"odid":"241","prod":"3","price":"160","prodgroup":"1","groupname":"\u0e02\u0e49\u0e32\u0e27","prodname":"\u0e15\u0e49\u0e21\u0e22\u0e33\u0e23\u0e27\u0e21\u0e21\u0e34\u0e15\u0e23"}]
+    [info] => {"total":"340","net":"340","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:52:38 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 20:52:39 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 20:52:39 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 20:52:40 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 20:52:40 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 20:52:41 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"235","prod":"4","price":"1200","prodgroup":"3","groupname":"\u0e1c\u0e31\u0e14\u0e1c\u0e31\u0e01","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"}]
+    [info] => {"total":"1200","net":"1200","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:52:42 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"233","prod":"3","price":"450","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e15\u0e49\u0e21\u0e22\u0e33\u0e23\u0e27\u0e21\u0e21\u0e34\u0e15\u0e23"},{"odid":"234","prod":"4","price":"500","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"}]
+    [info] => {"total":"950","net":"950","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:52:43 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"240","prod":"2","price":"400","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e1c\u0e31\u0e01\u0e1a\u0e38\u0e49\u0e07\u0e44\u0e1f\u0e41\u0e14\u0e07"}]
+    [info] => {"total":"400","net":"400","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:52:43 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 20:52:44 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"233","prod":"3","price":"450","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e15\u0e49\u0e21\u0e22\u0e33\u0e23\u0e27\u0e21\u0e21\u0e34\u0e15\u0e23"},{"odid":"234","prod":"4","price":"500","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"}]
+    [info] => {"total":"950","net":"950","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:52:45 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"243","prod":"1","price":"80","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e02\u0e48\u0e32\u0e27\u0e1c\u0e31\u0e14\u0e21\u0e31\u0e19\u0e01\u0e38\u0e49\u0e07\u0e40\u0e25\u0e47\u0e01"}]
+    [info] => {"total":"80","net":"80","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:53:34 [INFO] get restaurant info> Array
+(
+    [items] => [{"number":"1","order":"87","status":"1"},{"number":"2","order":null,"status":"0"},{"number":"3","order":null,"status":"0"},{"number":"4","order":"92","status":"1"},{"number":"5","order":null,"status":"0"},{"number":"6","order":null,"status":"0"},{"number":"7","order":"90","status":"1"},{"number":"8","order":null,"status":"0"},{"number":"9","order":null,"status":"0"},{"number":"10","order":null,"status":"0"},{"number":"11","order":null,"status":"0"},{"number":"12","order":"89","status":"1"},{"number":"13","order":null,"status":"0"},{"number":"14","order":null,"status":"0"},{"number":"15","order":null,"status":"0"},{"number":"16","order":null,"status":"0"},{"number":"17","order":null,"status":"0"},{"number":"18","order":null,"status":"0"},{"number":"19","order":null,"status":"0"},{"number":"20","order":"91","status":"1"}]
+    [info] => "null"
+)
+
+2016-04-09 20:53:36 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"243","prod":"1","price":"80","prodgroup":"2","groupname":"\u0e15\u0e49\u0e21\u0e22\u0e33","prodname":"\u0e02\u0e48\u0e32\u0e27\u0e1c\u0e31\u0e14\u0e21\u0e31\u0e19\u0e01\u0e38\u0e49\u0e07\u0e40\u0e25\u0e47\u0e01"}]
+    [info] => {"total":"80","net":"80","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:53:37 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"235","prod":"4","price":"1200","prodgroup":"3","groupname":"\u0e1c\u0e31\u0e14\u0e1c\u0e31\u0e01","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"}]
+    [info] => {"total":"1200","net":"1200","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:53:38 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 20:53:38 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+
+2016-04-09 20:53:38 [INFO] get restaurant info> Array
+(
+    [items] => [{"odid":"242","prod":"4","price":"180","prodgroup":"1","groupname":"\u0e02\u0e49\u0e32\u0e27","prodname":"\u0e19\u0e49\u0e33\u0e41\u0e1b\u0e47\u0e1a\u0e0b\u0e35\u0e48"},{"odid":"241","prod":"3","price":"160","prodgroup":"1","groupname":"\u0e02\u0e49\u0e32\u0e27","prodname":"\u0e15\u0e49\u0e21\u0e22\u0e33\u0e23\u0e27\u0e21\u0e21\u0e34\u0e15\u0e23"}]
+    [info] => {"total":"340","net":"340","receive":"0","change":"0","discount":"0"}
+)
+
+2016-04-09 20:53:39 [INFO] get restaurant info> Array
+(
+    [items] => null
+    [info] => {"total":null,"net":null,"receive":null,"change":null,"discount":null}
+)
+

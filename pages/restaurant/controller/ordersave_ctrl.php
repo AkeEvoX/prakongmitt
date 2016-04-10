@@ -6,31 +6,30 @@ include ("connect_restaurant.php");
 
 //get current profile
 $inputJSON = file_get_contents('php://input');
-$item= json_decode( $inputJSON, TRUE ); //convert JSON into array
+$item= json_decode($inputJSON, TRUE ); 
 
-$log = "";
 
+//declare orderid
 $orderid = $item["orderinfo"]["orderid"];
 $tablenum = $item["orderinfo"]["tablenum"];
+$resultmsg = "Fail";
 
-
-
-if($orderid=="")
+if($orderid=='')
 {
-	//insert data order
+
 	$call = $consqli->prepare('call InsertOrder(?,?,?,?,?,?,?,?,?,@result); ') or die('Error Procedure #' . $consqli->errno . ' : ' . $consqli->error);
-	$call->bind_param('sssssssds',$empid ,$total,$receive ,$return,$cust,$discount,$status,$net,$tablenum);
+	$call->bind_param('sssssssds',$empid ,$total,$receive ,$change,$cust,$discount,$status,$net,$tablenum);
 
 	$empid = $_SESSION["profile"]["empid"];
 	$total = $item["orderinfo"]["total"];
 	$receive = $item["orderinfo"]["receive"];
-	$return = $item["orderinfo"]["return"];
+	$change = $item["orderinfo"]["return"];
 	$cust = $item["orderinfo"]["custid"];
 	$discount = $item["orderinfo"]["discount"];
 	$net = $item["orderinfo"]["net"];
-	$status = '1'; // 1=complete , 0=not complete
+	$status = 0; //1=complete,0=not complate
+	
 	$call->execute();
-
 	$call->close();
 
 	$call = $consqli->query("select @result as orderid");
@@ -38,13 +37,11 @@ if($orderid=="")
 	$orderid =  $row['orderid']; 
 	$call->close();
 
-
-	$log = "create orderid = " . $orderid;
+	$resultmsg="success";
 }
-else
-{
+else {
 
-	//update data order
+	
 	$call = $consqli->prepare('call UpdateOrder(?,?,?,?,?,?,?,?,?,?); ') or die('Error Procedure #' . $consqli->errno . ' : ' . $consqli->error);
 	$call->bind_param('ssssssssds',$empid,$total,$receive,$change,$cusid,$orderid,$discount,$status,$net,$tablenum);
 
@@ -60,16 +57,22 @@ else
 	$call->execute();
 	$call->close();
 
-	//clear orderdetail
-	$call = $consqli->prepare("delete from orderdetails where orderid=? ");
-	$call->bind_param('d',$orderid);
-	$call->execute();
-	$call->close();
-
-
-	$log = "update orderid = " . $orderid;
+	$resultmsg="success";
 }
 
+// s = string , d = integer 	
+//update tablenumber
+$call = $consqli->prepare("update tablenumbers set orderid=?  where numbers=? ");
+$call->bind_param('dd',$orderid,$tablenum);
+$call->execute();
+$call->close();
+
+//clear orderdetail
+$call = $consqli->prepare("delete from orderdetails where orderid=? ");
+$call->bind_param('d',$orderid);
+$call->execute();
+$call->close();
+//insert new order detail
 foreach ($item["orderdetail"] as $item)
 {
 	
@@ -81,24 +84,14 @@ foreach ($item["orderdetail"] as $item)
 	$groupid = $item["groupid"];
 	
 	$call->execute();
-	$call->close();
-
+	$call->close();	
 }
 
-
-//clear overder tablenumbers
-if($tablenum!="")
-{
-	$call = $consqli->prepare('update tablenumbers set orderid=null where numbers=? ') or die('Error Procedure #' . $consqli->errno . ' : ' . $consqli->error);
-	$call->bind_param('s',$tablenum);
-	$call->execute();
-	$call->close();
-}
 
 $consqli ->close();
 
 
-echo json_encode(array("result"=>"Save Success","description"=>$log));
+echo json_encode(array("result"=>"Save " . $resultmsg));
 //print_r(json_encode($item));
 
 ?>

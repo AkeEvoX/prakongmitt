@@ -71,7 +71,7 @@ $('#btnSave').click(function(){
 
 	// save order
 	$.ajax({
-		url:"pages/restarant/controller/ordersave_ctrl.php?rdm=" + new Date().getTime(),
+		url:"pages/restaurant/controller/ordersave_ctrl.php?rdm=" + new Date().getTime(),
 		type:'POST',
 		data:JSON.stringify(dataSave),
 		contentType: "application/json; charset=utf-8",
